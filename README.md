@@ -46,9 +46,9 @@ Design a class called `Qubit` to represent a quantum bit in a quantum computer.
 * validate -- returns whether the state is normalized. Normalized means that |up|^2 + |down|^2 = 1
 * toString -- returns the form "(a + ib)|up> + (c + id)|down>:
 
-## Humans
+## Humans
 
-Design `Human`, `Woman`, and `Man` classes in such a way that the following code compiles and runs as expected. You  are not required to add other features to your classes.
+Design `Human`, `Woman`, and `Man` classes in such a way that the following code compiles and runs as expected. You  are not required to add other features to your classes. Consider whether the human class should be `abstract` here.
 
 ``` java
 import java.util.ArrayList
@@ -88,7 +88,7 @@ Define an abstract class Poem with no fields.
 
 * public abstract int numLines() - returns the number of lines in the poem.
 * public abstract int getSyllables(int k) - returns the number of syllables on the k-th line.
-* public void printRhythm() - shows the rhythm of the poem. For example, a haiku has 3 lines of 5, 7, and 5 syllables, so for a haiku the printRhythm method should print:
+* public abstract void printRhythm() - shows the rhythm of the poem. For example, a haiku has 3 lines of 5, 7, and 5 syllables, so for a haiku the printRhythm method should print:
 
 ```
 ta-ta-ta-ta-ta
@@ -181,7 +181,7 @@ Then write the concrete class `Book` which implements Purchasable. You may imple
 
 ### Constructors
 
-- Money(int v)
+- Coin(int v)
 
 ### Methods
 
