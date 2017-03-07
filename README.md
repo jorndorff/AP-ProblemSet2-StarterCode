@@ -74,11 +74,11 @@ Top10Songs will hold 10 Song objects in an array. It's only constructor should t
 
 ### Top10Songs Methods
 
-add method that takes in a Song and returns a boolean.  Places song in first available slot and returns true.  If all slots are taken, does not place Song and returns false.
+`add` method that takes in a Song and returns a boolean.  Places song in first available slot and returns true.  If all slots are taken, does not place Song and returns false.
 
-add method that takes in a song and an index and returns a Song.  This method should place the parameter Song at the given index and then bump all other songs down accordingly. The last song, which gets “bumped” from the list, should be returned.
+Overloaded `add` method that takes in a song and an index and returns a Song.  This method should place the parameter Song at the given index and then bump all other songs down accordingly. The last song, which gets “bumped” from the list, should be returned.
 
-toString method that return a String representation of the list that is numbered with each Song on its own line.
+`toString` method that return a String representation of the list that is numbered with each Song on its own line.
 
 ## Poems
 
