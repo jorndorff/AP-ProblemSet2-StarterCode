@@ -88,7 +88,7 @@ Define an abstract class Poem with no fields.
 
 * public abstract int numLines() - returns the number of lines in the poem.
 * public abstract int getSyllables(int k) - returns the number of syllables on the k-th line.
-* public abstract void printRhythm() - shows the rhythm of the poem. For example, a haiku has 3 lines of 5, 7, and 5 syllables, so for a haiku the printRhythm method should print:
+* public void printRhythm() - shows the rhythm of the poem. For example, a haiku has 3 lines of 5, 7, and 5 syllables, so for a haiku the printRhythm method should print:
 
 ```
 ta-ta-ta-ta-ta
