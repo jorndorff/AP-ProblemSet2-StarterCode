@@ -42,8 +42,8 @@ Design a class called `Qubit` to represent a quantum bit in a quantum computer.
 ### Methods
 
 * accessors and modifiers
-* measure -- returns either “up” or “down” probabilistically. The probability of measusring an "up" state is |up|^2 and likewise with down.
 * validate -- returns whether the state is normalized. Normalized means that |up|^2 + |down|^2 = 1
+* measure -- returns either “up” or “down” probabilistically when the state is valid. The probability of measusring an "up" state is |up|^2 and likewise with down. Returns "invalid" when the state is invalid.
 * toString -- returns the form "(a + ib)|up> + (c + id)|down>:
 
 ## Humans
@@ -163,7 +163,7 @@ To pass safety check for the following transportation methods, meaning checkSafe
 
 ![Screen Shot 2017-02-28 at 11.18.41 AM.png](https://lh3.googleusercontent.com/wWOKlf5N_SoXMDjkymJ6amVJP26HcadyClL6o4TTlkhRE3f7LYZZQ-G4FeQS2-YlJHZ3WRqAugt5XPnKtbkmLsW8RoFKi9QNtmn4g2lE-HECyL4lIB6hXaN2qGpODgRPWPhNDe4)
 
-## Team
+## Team
 
 Complete the `Team`, `Game`, and `League` classes that are sketched out in the Team directory.
 
@@ -207,7 +207,7 @@ Because this class is immutable, it does not have any modifiers or methods with 
 * int getTotalValue() //Returns the total value (in cents) of all coins that the shopper has
 * boolean buy (Purchasable p) //Attempts to add p to list of purchases, assuming that Shopper has enough funds. If they do, also subtract appropriate coins, replace with any necessary change, and return true. For example, if you purchase something for 8 cents and have only a quarter, you should remove the quarter and replace it with a dime, a nickel, and 2 pennies. If the shopper does not have enough money, the method should return false.
 * String toString() //Returns string representation of this shopper.
-* You may also want an addCoin(Money m) method that will allow you to give money to the shopper for testing purposes.
+* You may also want an addFunds(int amount) method that will allow you to give money to the shopper for testing purposes or making change.
 
 ## Game Board
 
